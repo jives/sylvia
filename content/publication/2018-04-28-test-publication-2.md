@@ -4,6 +4,7 @@ date = "2018-04-28"
 authors = ["Gruber Sylvia"]
 publication_types = ["2"]
 publication = "In *International Journal of Things*"
+publication_short = "In *IJT*"
 abstract = "This is the abstract."
 selected = false
 math = false
