@@ -10,9 +10,9 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Molecular Radiobiology"
-    "Immunotherapy"
-    "Advanced Cell Culture Models"
+    "Molecular Radiobiology",
+    "Immunotherapy",
+    "Advanced Cell Culture Models",
     "Particle Therapy"
   ]
 
