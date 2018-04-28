@@ -65,8 +65,7 @@ enableGitInfo = true
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "sylvia.gruber@meduniwien.ac.at"
-  address = "Division Applied and Translational Radiobiology, Department of Radiotherapy.
-  Medical University Vienna, Währinger Gürtel 18-20, A-1090 Vienna, Austria"
+  address = "Division Applied and Translational Radiobiology, Department of Radiotherapy. Medical University Vienna, Währinger Gürtel 18-20, A-1090 Vienna, Austria"
   office_hours = "Monday 10:00 to 13:00 or email for appointment"
   phone = "888 888 88 88"
   skype = "echo123"
