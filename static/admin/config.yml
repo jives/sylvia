@@ -4,8 +4,8 @@ backend:
 media_folder: "static/img"
 public_folder: "img"
 collections:
-  - name: "publications" # Used in routes, e.g., /admin/collections/blog
-    label: "Publications" # Used in the UI
+  - name: "publication" # Used in routes, e.g., /admin/collections/blog
+    label: "Publication" # Used in the UI
     folder: "content/publication" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -20,7 +20,7 @@ collections:
         field:
           - label: pType
             name: pType
-            wiget: select
+            widget: select
             options:
               - { label: "Uncategorized", value: "0" }
               - { label: "Conference Proceedings", value: "1" }
@@ -34,6 +34,7 @@ collections:
       - {label: "Selected Publication?", name: "selected", widget: "boolean"}
       - {label: "Includes Math?", name: "selected", widget: "boolean"}
       - {label: "Code Highlighting?", name: "selected", widget: "boolean"}
+      - {label: "Body", name: "body", widget: "markdown"}
       #TODO: Include links to projects?
   - name: "pages"
     label: "Pages"
@@ -42,5 +43,6 @@ collections:
         label: "Home Page"
         name: "about"
         fields:
-          - { label: "Widget", name: "widget", wdidget: "hidden", default: "about" }
-          - { label: "Active", name: "active", wdidget: "hidden", default: "true" }
+          - {label: "Widget", name: "widget", widget: "hidden", default: "about"}
+          - {label: "Active", name: "active", widget: "hidden", default: "true"}
+          - {label: "Body", name: "body", widget: "markdown"}
