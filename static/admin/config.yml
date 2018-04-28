@@ -32,8 +32,8 @@ collections:
       - {label: "Publication", name: "publication", widget: "string", default: "In *International Journal of Things*"}
       - {label: "Abstract", name: "abstract", widget: "text"}
       - {label: "Selected Publication?", name: "selected", widget: "boolean"}
-      - {label: "Includes Math?", name: "selected", widget: "boolean"}
-      - {label: "Code Highlighting?", name: "selected", widget: "boolean"}
+      - {label: "Includes Math?", name: "math", widget: "boolean"}
+      - {label: "Code Highlighting?", name: "highlight", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
       #TODO: Include links to projects?
   - name: "pages"
@@ -43,6 +43,6 @@ collections:
         label: "Home Page"
         name: "about"
         fields:
-          - {label: "Widget", name: "widget", widget: "hidden", default: "about"}
-          - {label: "Active", name: "active", widget: "hidden", default: "true"}
+          - {label: "Widget", name: "widget", widget: "string", default: "about"}
+          - {label: "Active", name: "active", widget: "boolean", default: "true"}
           - {label: "Body", name: "body", widget: "markdown"}
